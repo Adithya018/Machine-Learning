@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]\n\nages.sort()\n\nmin_age = min(ages)\nmax_age = max(ages)\n\nages.append(min_age)\nages.append(max_age)\n\nif len(ages) % 2 == 0:\n    median_age = (ages[len(ages)//2] + ages[len(ages)//2-1]) / 2\nelse:\n    median_age = ages[len(ages)//2]\n\naverage_age = sum(ages) / len(ages)\n\nrange_ages = max_age - min_age\n\nprint(\"Sorted list of ages:\", ages)\nprint(\"Minimum age:\", min_age)\nprint(\"Maximum age:\", max_age)\nprint(\"Median age:\", median_age)\nprint(\"Average age:\", average_age)\nprint(\"Range of ages:\", range_ages)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "Sorted list of ages: [19, 19, 20, 22, 24, 24, 24, 25, 25, 26, 19, 26]\nMinimum age: 19\nMaximum age: 26\nMedian age: 24.0\nAverage age: 22.75\nRange of ages: 7\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
+
+
+Q2: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "dog = {}\n\ndog[\"name\"] = \"Fido\"\ndog[\"color\"] = \"brown\"\ndog[\"breed\"] = \"Golden Retriever\"\ndog[\"legs\"] = 4\ndog[\"age\"] = 2\n\nstudent = {\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"gender\": \"male\",\n    \"age\": 25,\n    \"marital_status\": \"single\",\n    \"skills\": [\"python\", \"javascript\"],\n    \"country\": \"USA\",\n    \"city\": \"New York\",\n    \"address\": \"123 Main St\"\n}\n\nprint(len(student))\n\nskills = student[\"skills\"]\nprint(type(skills))\n\nstudent[\"skills\"].append(\"java\")\nstudent[\"skills\"].append(\"c++\")\n\nprint(list(student.keys()))\n\nprint(list(student.values()))\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "9\n<class 'list'>\n['first_name', 'last_name', 'gender', 'age', 'marital_status', 'skills', 'country', 'city', 'address']\n['John', 'Doe', 'male', 25, 'single', ['python', 'javascript', 'java', 'c++'], 'USA', 'New York', '123 Main St']\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
+
+
+
+Q3: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "# Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)\nsisters = (\"Aditi\", \"Sheeba\", \"Joe\")\nbrothers = (\"Adithya\", \"Prakash\", \"Bharath\")\n\n# Join brothers and sisters tuples and assign it to siblings \nsiblings = sisters + brothers\n\n# How many siblings do you have?\nprint(len(siblings))\n\n# Modify the siblings tuple and add the name of your father and mother and assign it to family_members\nfather = \"John\"\nmother = \"Mary\"\nfamily_members = (father, mother) + siblings\n\nprint(len(family_members))\n\n\n#I have created two tuples called sisters and brothers, then I have concatenated both the tuple and assigned to another variable 'siblings'. Finally, I have used len function to find the length of the tuple, which is the number of siblings.\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "6\n8\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
+Q4: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+`      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}\n\nA = {19, 22, 24, 20, 25, 26}\n\nB = {19, 22, 20, 25, 26, 24, 28, 27}\n\nage = [22, 19, 24, 25, 26, 24, 25, 24]\n\nprint(len(it_companies))\n\nit_companies.add('Twitter')\n\nit_companies.update(['Uber','Airbnb','Spotify'])\n\nit_companies.remove('Oracle')\n\nprint(\"The difference between remove and discard is that remove raises an error if the element is not present in the set, while discard does not.\")\nprint(A.union(B))\nprint(A.intersection(B))\nprint(A.issubset(B))\nprint(A.isdisjoint(B))\nprint(A.union(B),B.union(A))\nprint(A.symmetric_difference(B))\n\ndel it_companies\ndel A\ndel B\n\nage_set = set(age)\nprint(len(age))\nprint(len(age_set))\n\n#I used set operations such as add, update, remove, union, intersection, issubset, isdisjoint, symmetric_difference and finally, I deleted the sets using 'del' keyword. I also converted a list of ages to a set and compared the length of the list and the set.\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "7\nThe difference between remove and discard is that remove raises an error if the element is not present in the set, while discard does not.\n{19, 20, 22, 24, 25, 26, 27, 28}\n{19, 20, 22, 24, 25, 26}\nTrue\nFalse\n{19, 20, 22, 24, 25, 26, 27, 28} {19, 20, 22, 24, 25, 26, 27, 28}\n{27, 28}\n8\n5\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
+Q5: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "circle_radius = 30\n_area_of_circle_ = 3.14 * ((circle_radius)**2)\nprint(\"Area of a circle:\",_area_of_circle_)\n_circum_of_circle_ = 2 *3.14 * circle_radius\nprint(\"circumference of a circle:\",_circum_of_circle_)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "Area of a circle: 2826.0\ncircumference of a circle: 188.4\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "radius = float(input(\"Enter. the radius of the circle:\"))",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
+Q6: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "sentence = \"I am a teacher and I love to inspire and teach people\"\n\n# Use the split method to separate the words in the sentence\nwords = sentence.split()\n\n# Use the set() function to get the unique words\nunique_words = set(words)\n\n# Count the number of unique words\ncount = len(unique_words)\n\nprint(f\"There are {count} unique words used in the sentence.\")\n\n#In this code.I used the split() method to separate the words in the sentence and assigned the result to a variable called words. Then I used the set() function to get the unique words from words variable and assigned it to a variable called unique_words. Finally, I used the len() function to count the number of unique words in the unique_words variable and stored it in a variable called count. And I have printed the output with a message.\n\n\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "There are 10 unique words used in the sentence.\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
+Q7: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "# Use a tab escape sequence to get the following lines\nprint(\"Name\\tAge\\tCountry\\tCity\")\nprint(\"Asabeneh\\t250\\tFinland\\tHelsinki\")\n\n#In the above code snippet, I have used the \\t escape sequence to create a tab between each column. The print() function is used to print the content on the screen.",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
+Q8: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "radius = 10\narea = 3.14 * radius ** 2\n\n# Use the string formatting method to display the following\nprint(f\"The area of a circle with radius {radius} is {area} meters square.\")\n\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "The area of a circle with radius 10 is 314.0 meters square.\n",
+          "output_type": "stream"
+        }
+      ]
+    }
+  ]
+}
+
+Q9: {
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "N = int(input(\"Enter the number of students: \"))\n\n# Create an empty list to store student weights in lbs\nweights_lbs = []\nprint(\"Enter the weights of {} students\".format(N))\n\n# Use a loop to read weights of students in lbs\nfor i in range(0, N):\n    weight_lb = int(input())\n    weights_lbs.append(weight_lb)\nprint(\"{} students weights in lbs {}\".format(N, weitghs_lbs))\n\n# Create an empty list to store student weights in kgs\nweights_kgs = [i * 0.453592 for i in weights_lbs]\nprint(N, \"students weights in Kgs\",weights_kgs)\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "ename": "<class 'TypeError'>",
+          "evalue": "int() argument must be a string, a bytes-like object or a real number, not 'PyodideFuture'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "Cell \u001b[0;32mIn[8], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m N \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;43mint\u001b[39;49m\u001b[43m(\u001b[49m\u001b[38;5;28;43minput\u001b[39;49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[38;5;124;43mEnter the number of students: \u001b[39;49m\u001b[38;5;124;43m\"\u001b[39;49m\u001b[43m)\u001b[49m\u001b[43m)\u001b[49m\n\u001b[1;32m      3\u001b[0m \u001b[38;5;66;03m# Create an empty list to store student weights in lbs\u001b[39;00m\n\u001b[1;32m      4\u001b[0m weights_lbs \u001b[38;5;241m=\u001b[39m []\n",
+            "\u001b[0;31mTypeError\u001b[0m: int() argument must be a string, a bytes-like object or a real number, not 'PyodideFuture'"
+          ],
+          "output_type": "error"
+        },
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter the number of students:  3\n"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
